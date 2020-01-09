@@ -114,129 +114,129 @@ function imgui.OnDrawFrame()
 		end
 	  imgui.Begin(u8'Helper | ID VK Author @i_ne_v_seti', main_window_state, imgui.WindowFlags.NoResize)
 	    imgui.BeginChild("##g_sexbar", imgui.ImVec2(682.5, 106), true)
-			if imgui.CollapsingHeader(u8'Спамер', imgui.ImVec2(10,5)) then
-				imgui.Text(u8'Введите текст для спама.')
+			if imgui.CollapsingHeader(u8'Г‘ГЇГ Г¬ГҐГ°', imgui.ImVec2(10,5)) then
+				imgui.Text(u8'Г‚ГўГҐГ¤ГЁГІГҐ ГІГҐГЄГ±ГІ Г¤Г«Гї Г±ГЇГ Г¬Г .')
 				imgui.SameLine()
-				imgui.Text(u8'                                                                                     Введите задержку.')
+				imgui.Text(u8'                                                                                     Г‚ГўГҐГ¤ГЁГІГҐ Г§Г Г¤ГҐГ°Г¦ГЄГі.')
 				imgui.SameLine()
-				imgui.TextQuestion(u8'Что бы активировать спам введите команду <</spam>>.')
+				imgui.TextQuestion(u8'Г—ГІГ® ГЎГ» Г ГЄГІГЁГўГЁГ°Г®ГўГ ГІГј Г±ГЇГ Г¬ ГўГўГҐГ¤ГЁГІГҐ ГЄГ®Г¬Г Г­Г¤Гі <</spam>>.')
 				imgui.SameLine()
-				imgui.TextWarrning(u8'Прежде чем начать спам сохраните скрипт, задержка вводится в мили-секундах.')
+				imgui.TextWarrning(u8'ГЏГ°ГҐГ¦Г¤ГҐ Г·ГҐГ¬ Г­Г Г·Г ГІГј Г±ГЇГ Г¬ Г±Г®ГµГ°Г Г­ГЁГІГҐ Г±ГЄГ°ГЁГЇГІ, Г§Г Г¤ГҐГ°Г¦ГЄГ  ГўГўГ®Г¤ГЁГІГ±Гї Гў Г¬ГЁГ«ГЁ-Г±ГҐГЄГіГ­Г¤Г Гµ.')
 				imgui.InputText(u8' - ', tsp)
 				imgui.SameLine()
 				imgui.InputText(u8'', ssp)
 			end
-			if imgui.CollapsingHeader(u8'Калькулятор') then
-				imgui.Text(u8'Введите пример.')
+			if imgui.CollapsingHeader(u8'ГЉГ Г«ГјГЄГіГ«ГїГІГ®Г°') then
+				imgui.Text(u8'Г‚ГўГҐГ¤ГЁГІГҐ ГЇГ°ГЁГ¬ГҐГ°.')
 				imgui.SameLine()
-				imgui.TextQuestion(u8'Что бы решить пример введите команду <</ca>>.')
+				imgui.TextQuestion(u8'Г—ГІГ® ГЎГ» Г°ГҐГёГЁГІГј ГЇГ°ГЁГ¬ГҐГ° ГўГўГҐГ¤ГЁГІГҐ ГЄГ®Г¬Г Г­Г¤Гі <</ca>>.')
 				imgui.SameLine()
-				imgui.TextWarrning(u8'Прежде чем посмотреть результат сохраните скрипт!')
+				imgui.TextWarrning(u8'ГЏГ°ГҐГ¦Г¤ГҐ Г·ГҐГ¬ ГЇГ®Г±Г¬Г®ГІГ°ГҐГІГј Г°ГҐГ§ГіГ«ГјГІГ ГІ Г±Г®ГµГ°Г Г­ГЁГІГҐ Г±ГЄГ°ГЁГЇГІ!')
 				imgui.InputText(u8'', primer)
 			end
-			if imgui.CollapsingHeader(u8'Доп. функции') then
-				imgui.Checkbox(u8"Телефон", tlf)
+			if imgui.CollapsingHeader(u8'Г„Г®ГЇ. ГґГіГ­ГЄГ¶ГЁГЁ') then
+				imgui.Checkbox(u8"Г’ГҐГ«ГҐГґГ®Г­", tlf)
 				imgui.SameLine()
-				imgui.TextQuestion(u8'На английскую кнопку <<P>> вы сможете открыть телефон.')
-				imgui.Checkbox(u8"Ключи от авто", key)
+				imgui.TextQuestion(u8'ГЌГ  Г Г­ГЈГ«ГЁГ©Г±ГЄГіГѕ ГЄГ­Г®ГЇГЄГі <<P>> ГўГ» Г±Г¬Г®Г¦ГҐГІГҐ Г®ГІГЄГ°Г»ГІГј ГІГҐГ«ГҐГґГ®Г­.')
+				imgui.Checkbox(u8"ГЉГ«ГѕГ·ГЁ Г®ГІ Г ГўГІГ®", key)
 				imgui.SameLine()
-				imgui.TextQuestion(u8"При нажатии на клавишу <<K>> вы вставите/заберете ключи")
-				imgui.Checkbox(u8"Закрытие транспорта", lock)
+				imgui.TextQuestion(u8"ГЏГ°ГЁ Г­Г Г¦Г ГІГЁГЁ Г­Г  ГЄГ«Г ГўГЁГёГі <<K>> ГўГ» ГўГ±ГІГ ГўГЁГІГҐ/Г§Г ГЎГҐГ°ГҐГІГҐ ГЄГ«ГѕГ·ГЁ")
+				imgui.Checkbox(u8"Г‡Г ГЄГ°Г»ГІГЁГҐ ГІГ°Г Г­Г±ГЇГ®Г°ГІГ ", lock)
 				imgui.SameLine()
-				imgui.TextQuestion(u8"При нажатии на клавишу <<L>> вы закроете/откроете свой транспорт")
-				imgui.Checkbox(u8"Часы", time)
+				imgui.TextQuestion(u8"ГЏГ°ГЁ Г­Г Г¦Г ГІГЁГЁ Г­Г  ГЄГ«Г ГўГЁГёГі <<L>> ГўГ» Г§Г ГЄГ°Г®ГҐГІГҐ/Г®ГІГЄГ°Г®ГҐГІГҐ Г±ГўГ®Г© ГІГ°Г Г­Г±ГЇГ®Г°ГІ")
+				imgui.Checkbox(u8"Г—Г Г±Г»", time)
 				imgui.SameLine()
-				imgui.TextQuestion(u8"При сочетании клавиш <<XX>> вы посмотрите на часы")
-				imgui.Checkbox(u8'Анти Афк', aafk)
+				imgui.TextQuestion(u8"ГЏГ°ГЁ Г±Г®Г·ГҐГІГ Г­ГЁГЁ ГЄГ«Г ГўГЁГё <<XX>> ГўГ» ГЇГ®Г±Г¬Г®ГІГ°ГЁГІГҐ Г­Г  Г·Г Г±Г»")
+				imgui.Checkbox(u8'ГЂГ­ГІГЁ ГЂГґГЄ', aafk)
 			end
-			if imgui.CollapsingHeader(u8'Помощь в ловле') then
-				imgui.Checkbox(u8"Авто тайм после ловли", at)
+			if imgui.CollapsingHeader(u8'ГЏГ®Г¬Г®Г№Гј Гў Г«Г®ГўГ«ГҐ') then
+				imgui.Checkbox(u8"ГЂГўГІГ® ГІГ Г©Г¬ ГЇГ®Г±Г«ГҐ Г«Г®ГўГ«ГЁ", at)
 				imgui.SameLine()
-				imgui.TextQuestion(u8"После удачной ловли скрипт сам пропишет /time с отыгровкой")
-				imgui.Checkbox(u8"Сообщение после покупки авто", mbc)
+				imgui.TextQuestion(u8"ГЏГ®Г±Г«ГҐ ГіГ¤Г Г·Г­Г®Г© Г«Г®ГўГ«ГЁ Г±ГЄГ°ГЁГЇГІ Г±Г Г¬ ГЇГ°Г®ГЇГЁГёГҐГІ /time Г± Г®ГІГ»ГЈГ°Г®ГўГЄГ®Г©")
+				imgui.Checkbox(u8"Г‘Г®Г®ГЎГ№ГҐГ­ГЁГҐ ГЇГ®Г±Г«ГҐ ГЇГ®ГЄГіГЇГЄГЁ Г ГўГІГ®", mbc)
 				imgui.SameLine()
-				imgui.TextQuestion(u8"Это сообщение отправится после покупки авто.")
-				imgui.InputText(u8"Сообщение", smsbc)
-				imgui.Checkbox(u8"Покупка бизнеса", bb)
+				imgui.TextQuestion(u8"ГќГІГ® Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ Г®ГІГЇГ°Г ГўГЁГІГ±Гї ГЇГ®Г±Г«ГҐ ГЇГ®ГЄГіГЇГЄГЁ Г ГўГІГ®.")
+				imgui.InputText(u8"Г‘Г®Г®ГЎГ№ГҐГ­ГЁГҐ", smsbc)
+				imgui.Checkbox(u8"ГЏГ®ГЄГіГЇГЄГ  ГЎГЁГ§Г­ГҐГ±Г ", bb)
 				imgui.SameLine()
-				imgui.TextQuestion(u8"Вместо того что вам вводить команду когда вы ловите бизнес вам надо будет просто нажать кнопку <<N>>")
+				imgui.TextQuestion(u8"Г‚Г¬ГҐГ±ГІГ® ГІГ®ГЈГ® Г·ГІГ® ГўГ Г¬ ГўГўГ®Г¤ГЁГІГј ГЄГ®Г¬Г Г­Г¤Гі ГЄГ®ГЈГ¤Г  ГўГ» Г«Г®ГўГЁГІГҐ ГЎГЁГ§Г­ГҐГ± ГўГ Г¬ Г­Г Г¤Г® ГЎГіГ¤ГҐГІ ГЇГ°Г®Г±ГІГ® Г­Г Г¦Г ГІГј ГЄГ­Г®ГЇГЄГі <<N>>")
 			end
 		imgui.EndChild()
-		if imgui.CollapsingHeader(u8'Описание скрипта') then
-			imgui.Text(u8'Автор скрипта: Danil Korabelnikov (Danil_Conti)')
-			imgui.Text(u8'Ссылка на автора в BH -> ')
+		if imgui.CollapsingHeader(u8'ГЋГЇГЁГ±Г Г­ГЁГҐ Г±ГЄГ°ГЁГЇГІГ ') then
+			imgui.Text(u8'ГЂГўГІГ®Г° Г±ГЄГ°ГЁГЇГІГ : Danil Korabelnikov (Danil_Conti)')
+			imgui.Text(u8'Г‘Г±Г»Г«ГЄГ  Г­Г  Г ГўГІГ®Г°Г  Гў BH -> ')
 			imgui.SameLine()
-			imgui.TextColored(imgui.ImVec4(65/255, 105/255, 225/255, 1),u8'тык')
+			imgui.TextColored(imgui.ImVec4(65/255, 105/255, 225/255, 1),u8'ГІГ»ГЄ')
 			if imgui.IsItemClicked() then
 				os.execute('start https://blast.hk/members/399616/')
 			end
 			imgui.Text(u8'')
-			imgui.Text(u8'Если хотите узнать какую то информацию о скрипте или что то предложить пишите автору в вк.')
-			if imgui.Button(u8('Связаться с автором')) then
+			imgui.Text(u8'Г…Г±Г«ГЁ ГµГ®ГІГЁГІГҐ ГіГ§Г­Г ГІГј ГЄГ ГЄГіГѕ ГІГ® ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ Г® Г±ГЄГ°ГЁГЇГІГҐ ГЁГ«ГЁ Г·ГІГ® ГІГ® ГЇГ°ГҐГ¤Г«Г®Г¦ГЁГІГј ГЇГЁГёГЁГІГҐ Г ГўГІГ®Г°Гі Гў ГўГЄ.')
+			if imgui.Button(u8('Г‘ГўГїГ§Г ГІГјГ±Гї Г± Г ГўГІГ®Г°Г®Г¬')) then
 				os.execute('start https://vk.com/i_ne_v_seti')
 			end
 		end
-		if imgui.CollapsingHeader(u8'Описание команд/список команд') then
-				imgui.Text(u8'Вводить как команды.', 1)
-				imgui.Text(u8"/spam - активировать/деактивировать спам ")
-				imgui.Text(u8'/fh - сокращённая команда /findihouse [ID дома]')
+		if imgui.CollapsingHeader(u8'ГЋГЇГЁГ±Г Г­ГЁГҐ ГЄГ®Г¬Г Г­Г¤/Г±ГЇГЁГ±Г®ГЄ ГЄГ®Г¬Г Г­Г¤') then
+				imgui.Text(u8'Г‚ГўГ®Г¤ГЁГІГј ГЄГ ГЄ ГЄГ®Г¬Г Г­Г¤Г».', 1)
+				imgui.Text(u8"/spam - Г ГЄГІГЁГўГЁГ°Г®ГўГ ГІГј/Г¤ГҐГ ГЄГІГЁГўГЁГ°Г®ГўГ ГІГј Г±ГЇГ Г¬ ")
+				imgui.Text(u8'/fh - Г±Г®ГЄГ°Г Г№ВёГ­Г­Г Гї ГЄГ®Г¬Г Г­Г¤Г  /findihouse [ID Г¤Г®Г¬Г ]')
 				imgui.SameLine()
-				imgui.TextQuestion(u8'Найти дом.')
-				imgui.Text(u8'/fbz - сокращённая команда /findibiz [ID бизнеса]')
+				imgui.TextQuestion(u8'ГЌГ Г©ГІГЁ Г¤Г®Г¬.')
+				imgui.Text(u8'/fbz - Г±Г®ГЄГ°Г Г№ВёГ­Г­Г Гї ГЄГ®Г¬Г Г­Г¤Г  /findibiz [ID ГЎГЁГ§Г­ГҐГ±Г ]')
 				imgui.SameLine()
-				imgui.TextQuestion(u8'Найти бизнес.')
-				imgui.Text(u8'/mc [ID Игрока] - сокращённая команда /showmc [ID игрока]')
+				imgui.TextQuestion(u8'ГЌГ Г©ГІГЁ ГЎГЁГ§Г­ГҐГ±.')
+				imgui.Text(u8'/mc [ID Г€ГЈГ°Г®ГЄГ ] - Г±Г®ГЄГ°Г Г№ВёГ­Г­Г Гї ГЄГ®Г¬Г Г­Г¤Г  /showmc [ID ГЁГЈГ°Г®ГЄГ ]')
 				imgui.SameLine()
-				imgui.TextQuestion(u8'Показать мед-карту игроку.')
-				imgui.Text(u8'/pass [ID Игрока] - сокращённая команда /showpass [ID игрока]')
+				imgui.TextQuestion(u8'ГЏГ®ГЄГ Г§Г ГІГј Г¬ГҐГ¤-ГЄГ Г°ГІГі ГЁГЈГ°Г®ГЄГі.')
+				imgui.Text(u8'/pass [ID Г€ГЈГ°Г®ГЄГ ] - Г±Г®ГЄГ°Г Г№ВёГ­Г­Г Гї ГЄГ®Г¬Г Г­Г¤Г  /showpass [ID ГЁГЈГ°Г®ГЄГ ]')
 				imgui.SameLine()
-				imgui.TextQuestion(u8'Показать паспорт игроку.')
-				imgui.Text(u8'/lic [ID Игрока] - сокращённая команда /showlic [ID игрока]')
+				imgui.TextQuestion(u8'ГЏГ®ГЄГ Г§Г ГІГј ГЇГ Г±ГЇГ®Г°ГІ ГЁГЈГ°Г®ГЄГі.')
+				imgui.Text(u8'/lic [ID Г€ГЈГ°Г®ГЄГ ] - Г±Г®ГЄГ°Г Г№ВёГ­Г­Г Гї ГЄГ®Г¬Г Г­Г¤Г  /showlic [ID ГЁГЈГ°Г®ГЄГ ]')
 				imgui.SameLine()
-				imgui.TextQuestion(u8'Показать лицензии игроку.')
-				imgui.Text(u8'/fc - сокращённая команда /fam [текст]')
+				imgui.TextQuestion(u8'ГЏГ®ГЄГ Г§Г ГІГј Г«ГЁГ¶ГҐГ­Г§ГЁГЁ ГЁГЈГ°Г®ГЄГі.')
+				imgui.Text(u8'/fc - Г±Г®ГЄГ°Г Г№ВёГ­Г­Г Гї ГЄГ®Г¬Г Г­Г¤Г  /fam [ГІГҐГЄГ±ГІ]')
 				imgui.SameLine()
-				imgui.TextQuestion(u8'Написать в чат фамы.')
-				imgui.Text(u8'/fm - сокращённая команда /fammenu')
+				imgui.TextQuestion(u8'ГЌГ ГЇГЁГ±Г ГІГј Гў Г·Г ГІ ГґГ Г¬Г».')
+				imgui.Text(u8'/fm - Г±Г®ГЄГ°Г Г№ВёГ­Г­Г Гї ГЄГ®Г¬Г Г­Г¤Г  /fammenu')
 				imgui.SameLine()
-				imgui.TextQuestion(u8'Меню управление семьей.')
-				imgui.Text(u8'/fi [ID Игрока] - сокращённая команда /faminvite [ID Игрока]')
+				imgui.TextQuestion(u8'ГЊГҐГ­Гѕ ГіГЇГ°Г ГўГ«ГҐГ­ГЁГҐ Г±ГҐГ¬ГјГҐГ©.')
+				imgui.Text(u8'/fi [ID Г€ГЈГ°Г®ГЄГ ] - Г±Г®ГЄГ°Г Г№ВёГ­Г­Г Гї ГЄГ®Г¬Г Г­Г¤Г  /faminvite [ID Г€ГЈГ°Г®ГЄГ ]')
 				imgui.SameLine()
-				imgui.TextQuestion(u8'Пригласить игрока в семью.')
+				imgui.TextQuestion(u8'ГЏГ°ГЁГЈГ«Г Г±ГЁГІГј ГЁГЈГ°Г®ГЄГ  Гў Г±ГҐГ¬ГјГѕ.')
 				imgui.Text('')
-				imgui.Text(u8'Вводить как чит-код либо просто нажать.', imgui.ImVec2(20,5))
+				imgui.Text(u8'Г‚ГўГ®Г¤ГЁГІГј ГЄГ ГЄ Г·ГЁГІ-ГЄГ®Г¤ Г«ГЁГЎГ® ГЇГ°Г®Г±ГІГ® Г­Г Г¦Г ГІГј.', imgui.ImVec2(20,5))
 				imgui.SameLine()
-				imgui.TextWarrning(u8'Все написаные кнопки ниже были указаны на английском.')
-				imgui.Text(u8"ZZ как чит код - активация меню ")
-				imgui.Text(u8'На кнопку <<P>> откроется телефон.')
-				imgui.Text(u8'На кнопку <<L>> закроется транспорт.')
-				imgui.Text(u8'На кнопку <<K>> высунеца ключ.')
+				imgui.TextWarrning(u8'Г‚Г±ГҐ Г­Г ГЇГЁГ±Г Г­Г»ГҐ ГЄГ­Г®ГЇГЄГЁ Г­ГЁГ¦ГҐ ГЎГ»Г«ГЁ ГіГЄГ Г§Г Г­Г» Г­Г  Г Г­ГЈГ«ГЁГ©Г±ГЄГ®Г¬.')
+				imgui.Text(u8"ZZ ГЄГ ГЄ Г·ГЁГІ ГЄГ®Г¤ - Г ГЄГІГЁГўГ Г¶ГЁГї Г¬ГҐГ­Гѕ ")
+				imgui.Text(u8'ГЌГ  ГЄГ­Г®ГЇГЄГі <<P>> Г®ГІГЄГ°Г®ГҐГІГ±Гї ГІГҐГ«ГҐГґГ®Г­.')
+				imgui.Text(u8'ГЌГ  ГЄГ­Г®ГЇГЄГі <<L>> Г§Г ГЄГ°Г®ГҐГІГ±Гї ГІГ°Г Г­Г±ГЇГ®Г°ГІ.')
+				imgui.Text(u8'ГЌГ  ГЄГ­Г®ГЇГЄГі <<K>> ГўГ»Г±ГіГ­ГҐГ¶Г  ГЄГ«ГѕГ·.')
 			end
-			if imgui.CollapsingHeader(u8'Термины') then
-				imgui.Text(u8'ДМ- Убийство без причины.')
-				imgui.Text(u8'ДБ- Убийство с машины (машиной).')
-				imgui.Text(u8'СК- Спавн килл, т.е. убийство при появлении.')
-				imgui.Text(u8'ТК- "Team Kill" - Убийство своих.')
-				imgui.Text(u8'РП- "Role Play"- Игра по ролям где каждый должен соблюдать свою роль.')
-				imgui.Text(u8'МГ- "Meta Gaming" - Использование информации из реального мира в игровой чат(сокращенно: ООС в ис ).')
-				imgui.Text(u8'ГМ- "God Mood" - Бог мод - т.е. режим бога.')
-				imgui.Text(u8'ПГ- "Power Gaming" - Изображение из себя героя,например когда у тебя нет оружия и ты идешь на человека у ')
-				imgui.Text(u8'которого оно есть , или например драка 5 против одного.')
-				imgui.Text(u8'РК- Возвращение на место где тебя убили.')
-				imgui.Text(u8'БХ- "Бани Хоп"- нонРП бег с прыжками ( shift+space )')
-				imgui.Text(u8'УК-"Уголовный Кодекс"')
-				imgui.Text(u8'АК- "Академический Кодекс"')
-				imgui.Text(u8'ЗЗ- "Зеленая Зона". Общественные места-площадь у мэрии, вокзалы, больницы и т.п. (В этой ')
-				imgui.Text(u8'зоне запрещено стрелять)')
+			if imgui.CollapsingHeader(u8'Г’ГҐГ°Г¬ГЁГ­Г»') then
+				imgui.Text(u8'Г„ГЊ- Г“ГЎГЁГ©Г±ГІГўГ® ГЎГҐГ§ ГЇГ°ГЁГ·ГЁГ­Г».')
+				imgui.Text(u8'Г„ГЃ- Г“ГЎГЁГ©Г±ГІГўГ® Г± Г¬Г ГёГЁГ­Г» (Г¬Г ГёГЁГ­Г®Г©).')
+				imgui.Text(u8'Г‘ГЉ- Г‘ГЇГ ГўГ­ ГЄГЁГ«Г«, ГІ.ГҐ. ГіГЎГЁГ©Г±ГІГўГ® ГЇГ°ГЁ ГЇГ®ГїГўГ«ГҐГ­ГЁГЁ.')
+				imgui.Text(u8'Г’ГЉ- "Team Kill" - Г“ГЎГЁГ©Г±ГІГўГ® Г±ГўГ®ГЁГµ.')
+				imgui.Text(u8'ГђГЏ- "Role Play"- Г€ГЈГ°Г  ГЇГ® Г°Г®Г«ГїГ¬ ГЈГ¤ГҐ ГЄГ Г¦Г¤Г»Г© Г¤Г®Г«Г¦ГҐГ­ Г±Г®ГЎГ«ГѕГ¤Г ГІГј Г±ГўГ®Гѕ Г°Г®Г«Гј.')
+				imgui.Text(u8'ГЊГѓ- "Meta Gaming" - Г€Г±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГҐ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ ГЁГ§ Г°ГҐГ Г«ГјГ­Г®ГЈГ® Г¬ГЁГ°Г  Гў ГЁГЈГ°Г®ГўГ®Г© Г·Г ГІ(Г±Г®ГЄГ°Г Г№ГҐГ­Г­Г®: ГЋГЋГ‘ Гў ГЁГ± ).')
+				imgui.Text(u8'ГѓГЊ- "God Mood" - ГЃГ®ГЈ Г¬Г®Г¤ - ГІ.ГҐ. Г°ГҐГ¦ГЁГ¬ ГЎГ®ГЈГ .')
+				imgui.Text(u8'ГЏГѓ- "Power Gaming" - Г€Г§Г®ГЎГ°Г Г¦ГҐГ­ГЁГҐ ГЁГ§ Г±ГҐГЎГї ГЈГҐГ°Г®Гї,Г­Г ГЇГ°ГЁГ¬ГҐГ° ГЄГ®ГЈГ¤Г  Гі ГІГҐГЎГї Г­ГҐГІ Г®Г°ГіГ¦ГЁГї ГЁ ГІГ» ГЁГ¤ГҐГёГј Г­Г  Г·ГҐГ«Г®ГўГҐГЄГ  Гі ')
+				imgui.Text(u8'ГЄГ®ГІГ®Г°Г®ГЈГ® Г®Г­Г® ГҐГ±ГІГј , ГЁГ«ГЁ Г­Г ГЇГ°ГЁГ¬ГҐГ° Г¤Г°Г ГЄГ  5 ГЇГ°Г®ГІГЁГў Г®Г¤Г­Г®ГЈГ®.')
+				imgui.Text(u8'ГђГЉ- Г‚Г®Г§ГўГ°Г Г№ГҐГ­ГЁГҐ Г­Г  Г¬ГҐГ±ГІГ® ГЈГ¤ГҐ ГІГҐГЎГї ГіГЎГЁГ«ГЁ.')
+				imgui.Text(u8'ГЃГ•- "ГЃГ Г­ГЁ Г•Г®ГЇ"- Г­Г®Г­ГђГЏ ГЎГҐГЈ Г± ГЇГ°Г»Г¦ГЄГ Г¬ГЁ ( shift+space )')
+				imgui.Text(u8'Г“ГЉ-"Г“ГЈГ®Г«Г®ГўГ­Г»Г© ГЉГ®Г¤ГҐГЄГ±"')
+				imgui.Text(u8'ГЂГЉ- "ГЂГЄГ Г¤ГҐГ¬ГЁГ·ГҐГ±ГЄГЁГ© ГЉГ®Г¤ГҐГЄГ±"')
+				imgui.Text(u8'Г‡Г‡- "Г‡ГҐГ«ГҐГ­Г Гї Г‡Г®Г­Г ". ГЋГЎГ№ГҐГ±ГІГўГҐГ­Г­Г»ГҐ Г¬ГҐГ±ГІГ -ГЇГ«Г®Г№Г Г¤Гј Гі Г¬ГЅГ°ГЁГЁ, ГўГ®ГЄГ§Г Г«Г», ГЎГ®Г«ГјГ­ГЁГ¶Г» ГЁ ГІ.ГЇ. (Г‚ ГЅГІГ®Г© ')
+				imgui.Text(u8'Г§Г®Г­ГҐ Г§Г ГЇГ°ГҐГ№ГҐГ­Г® Г±ГІГ°ГҐГ«ГїГІГј)')
 				imgui.Text(u8'')
-				imgui.Text(u8'Если вас спрашивают: "Что такое ДМ?" без (( )), то вы отвечаете то, что могут сокращать эти буквы т.е. : " Дядя ')
-				imgui.Text(u8'Миша; Дом Медведя" и т.д. , а если вас спрашивают с присутствием в чате скобок, т.е. : (( Что такое ДМ? )) , то ')
-				imgui.Text(u8'вы в ответ в скобках пишете (( ДМ- убийство без причины.)). ')
+				imgui.Text(u8'Г…Г±Г«ГЁ ГўГ Г± Г±ГЇГ°Г ГёГЁГўГ ГѕГІ: "Г—ГІГ® ГІГ ГЄГ®ГҐ Г„ГЊ?" ГЎГҐГ§ (( )), ГІГ® ГўГ» Г®ГІГўГҐГ·Г ГҐГІГҐ ГІГ®, Г·ГІГ® Г¬Г®ГЈГіГІ Г±Г®ГЄГ°Г Г№Г ГІГј ГЅГІГЁ ГЎГіГЄГўГ» ГІ.ГҐ. : " Г„ГїГ¤Гї ')
+				imgui.Text(u8'ГЊГЁГёГ ; Г„Г®Г¬ ГЊГҐГ¤ГўГҐГ¤Гї" ГЁ ГІ.Г¤. , Г  ГҐГ±Г«ГЁ ГўГ Г± Г±ГЇГ°Г ГёГЁГўГ ГѕГІ Г± ГЇГ°ГЁГ±ГіГІГ±ГІГўГЁГҐГ¬ Гў Г·Г ГІГҐ Г±ГЄГ®ГЎГ®ГЄ, ГІ.ГҐ. : (( Г—ГІГ® ГІГ ГЄГ®ГҐ Г„ГЊ? )) , ГІГ® ')
+				imgui.Text(u8'ГўГ» Гў Г®ГІГўГҐГІ Гў Г±ГЄГ®ГЎГЄГ Гµ ГЇГЁГёГҐГІГҐ (( Г„ГЊ- ГіГЎГЁГ©Г±ГІГўГ® ГЎГҐГ§ ГЇГ°ГЁГ·ГЁГ­Г».)). ')
 				imgui.Text(u8'')
-				imgui.Text(u8'Запомните. Всё что пишется в скобках " (( )) " - нонРП чат, т.е. в него говорят всё то, что относится к реальному ')
-				imgui.Text(u8'миру, и почти не касается виртуального.')
+				imgui.Text(u8'Г‡Г ГЇГ®Г¬Г­ГЁГІГҐ. Г‚Г±Вё Г·ГІГ® ГЇГЁГёГҐГІГ±Гї Гў Г±ГЄГ®ГЎГЄГ Гµ " (( )) " - Г­Г®Г­ГђГЏ Г·Г ГІ, ГІ.ГҐ. Гў Г­ГҐГЈГ® ГЈГ®ГўГ®Г°ГїГІ ГўГ±Вё ГІГ®, Г·ГІГ® Г®ГІГ­Г®Г±ГЁГІГ±Гї ГЄ Г°ГҐГ Г«ГјГ­Г®Г¬Гі ')
+				imgui.Text(u8'Г¬ГЁГ°Гі, ГЁ ГЇГ®Г·ГІГЁ Г­ГҐ ГЄГ Г±Г ГҐГІГ±Гї ГўГЁГ°ГІГіГ Г«ГјГ­Г®ГЈГ®.')
 			end
-		if imgui.Button(u8'Сохранить', imgui.ImVec2(125,50)) then
+		if imgui.Button(u8'Г‘Г®ГµГ°Г Г­ГЁГІГј', imgui.ImVec2(125,50)) then
 			mainIni.config.primer = primer.v
 			mainIni.config.ssp = ssp.v
 			mainIni.config.tsp = tsp.v
@@ -255,14 +255,14 @@ function imgui.OnDrawFrame()
 			inicfg.save(mainIni, 'helper.ini')
 		end
 		imgui.SameLine()
-		if imgui.Button(u8'Перезагрузить', imgui.ImVec2(125,50)) then
+		if imgui.Button(u8'ГЏГҐГ°ГҐГ§Г ГЈГ°ГіГ§ГЁГІГј', imgui.ImVec2(125,50)) then
 			mainIni.config.primer = ' '
 			mainIni.config.tsp = ' '
 			mainIni.config.ssp = '1200'
 			thisScript():reload()
 		end
 		imgui.SameLine()
-		if imgui.Button(u8'Проверить обновления##check_update', imgui.ImVec2(125,50)) then
+		if imgui.Button(u8'ГЏГ°Г®ГўГҐГ°ГЁГІГј Г®ГЎГ­Г®ГўГ«ГҐГ­ГЁГї##check_update', imgui.ImVec2(125,50)) then
 			local fpath = os.getenv('TEMP') .. '\\satiety-bot.json'
 			downloadUrlToFile('https://gist.githubusercontent.com/CodesSamp/6980c0155468f6e8a7825076478cae43/raw/5b4ff429b410ce766274102bcce0a91b5fd32cf1/helper.json', fpath, function(id, status, p1, p2)
 			    if status == dlstatus.STATUS_ENDDOWNLOADDATA then
@@ -275,10 +275,10 @@ function imgui.OnDrawFrame()
 							ver = tonumber(info.ver)
 							if version > tonumber(thisScript().version) then
 								new = 1
-								sampAddChatMessage(('[Helper]: {FFFFFF}Доступно обновление!'), 0xF1CB09)
+								sampAddChatMessage(('[Helper]: {FFFFFF}Г„Г®Г±ГІГіГЇГ­Г® Г®ГЎГ­Г®ГўГ«ГҐГ­ГЁГҐ!'), 0xF1CB09)
 							else
 								update = false
-								sampAddChatMessage(('[Helper]: {FFFFFF}У вас установлена последния версия!'), 0xF1CB09)
+								sampAddChatMessage(('[Helper]: {FFFFFF}Г“ ГўГ Г± ГіГ±ГІГ Г­Г®ГўГ«ГҐГ­Г  ГЇГ®Г±Г«ГҐГ¤Г­ГЁГї ГўГҐГ°Г±ГЁГї!'), 0xF1CB09)
 							end
 						end
 					end
@@ -287,13 +287,13 @@ function imgui.OnDrawFrame()
 		end
 		if new == 1 then
 			imgui.SameLine()
-			if imgui.Button(u8'Обновить##update') then
+			if imgui.Button(u8'ГЋГЎГ­Г®ГўГЁГІГј##update') then
 				lua_thread.create(function()
-					sampAddChatMessage(('[Helper]: Обновляюсь...'), 0xF1CB09)
+					sampAddChatMessage(('[Helper]: ГЋГЎГ­Г®ГўГ«ГїГѕГ±Гј...'), 0xF1CB09)
 					wait(300)
 					downloadUrlToFile(updatelink, thisScript().path, function(id3, status1, p13, p23)
 						if status1 == dlstatus.STATUS_ENDDOWNLOADDATA then
-							sampAddChatMessage(('[Helper]: Обновление завершено!'), 0xF1CB09)
+							sampAddChatMessage(('[Helper]: ГЋГЎГ­Г®ГўГ«ГҐГ­ГЁГҐ Г§Г ГўГҐГ°ГёГҐГ­Г®!'), 0xF1CB09)
 							thisScript():reload()
 						end
 					end)
@@ -301,7 +301,7 @@ function imgui.OnDrawFrame()
 			end
 		end
 		imgui.SameLine()
-		imgui.TextWarrning(u8'Кнопка <<Проверить обновление>> в бета тесте, не нажимать!!!')
+		imgui.TextWarrning(u8'ГЉГ­Г®ГЇГЄГ  <<ГЏГ°Г®ГўГҐГ°ГЁГІГј Г®ГЎГ­Г®ГўГ«ГҐГ­ГЁГҐ>> Гў ГЎГҐГІГ  ГІГҐГ±ГІГҐ, Г­ГҐ Г­Г Г¦ГЁГ¬Г ГІГј!!!')
 		imgui.End()
 	end
 end
@@ -311,14 +311,14 @@ function main()
 		
 	imgui.Process = false
 		
-	notf.addNotification("Скрипт был успешно загружен", 5, 1)
+	notf.addNotification("Г‘ГЄГ°ГЁГЇГІ ГЎГ»Г« ГіГ±ГЇГҐГёГ­Г® Г§Г ГЈГ°ГіГ¦ГҐГ­", 5, 1)
 		
-	sampAddChatMessage('{610BBE}[Helper] {FFFFFF}Скрипт успешно загружен‚автор {E00B0B}Danil_Conti.')
+	sampAddChatMessage('{610BBE}[Helper] {FFFFFF}Г‘ГЄГ°ГЁГЇГІ ГіГ±ГЇГҐГёГ­Г® Г§Г ГЈГ°ГіГ¦ГҐГ­В‚Г ГўГІГ®Г° {E00B0B}Danil_Conti.')
 	
 	sampRegisterChatCommand('ca', calc)
 		
 	sampRegisterChatCommand('spam', function() 
-	act = not act; sampAddChatMessage(act and '{01A0E9}Спам включен!' or '{01A0E9}Спам выключен!', -1)
+	act = not act; sampAddChatMessage(act and '{01A0E9}Г‘ГЇГ Г¬ ГўГЄГ«ГѕГ·ГҐГ­!' or '{01A0E9}Г‘ГЇГ Г¬ ГўГ»ГЄГ«ГѕГ·ГҐГ­!', -1)
 	if act then
 	 spam()
 	end
@@ -387,10 +387,10 @@ function main()
 		end
 		if time.v then
 			if testCheat("xx") and not sampIsCursorActive() then
-				sampSendChat("/me взглянул на часы марки <<Rolex>> с гравировкой <<Бан нахуй.>> ")
+				sampSendChat("/me ГўГ§ГЈГ«ГїГ­ГіГ« Г­Г  Г·Г Г±Г» Г¬Г Г°ГЄГЁ <<Rolex>> Г± ГЈГ°Г ГўГЁГ°Г®ГўГЄГ®Г© <<ГЃГ Г­ Г­Г ГµГіГ©.>> ")
 				sampSendChat("/time")
 				wait(1200)
-				sampSendChat ("/do На часах:  "..os.date('%H:%M:%S'))
+				sampSendChat ("/do ГЌГ  Г·Г Г±Г Гµ:  "..os.date('%H:%M:%S'))
 			end 
 		end
 		if not sampIsCursorActive() then
@@ -407,19 +407,19 @@ end
 
 function sampev.onSendCommand(command)
 	if command == '/yes' then
-		sampAddChatMessage('{610BBE}[Helper] {FFFFFF}Выйди из казино, а то все деньги проиграешь!')
+		sampAddChatMessage('{610BBE}[Helper] {FFFFFF}Г‚Г»Г©Г¤ГЁ ГЁГ§ ГЄГ Г§ГЁГ­Г®, Г  ГІГ® ГўГ±ГҐ Г¤ГҐГ­ГјГЈГЁ ГЇГ°Г®ГЁГЈГ°Г ГҐГёГј!')
 		return false
 	end
 	if command == '/YES' then
-		sampAddChatMessage('{610BBE}[Helper] {FFFFFF}Выйди из казино, а то все деньги проиграешь!')
+		sampAddChatMessage('{610BBE}[Helper] {FFFFFF}Г‚Г»Г©Г¤ГЁ ГЁГ§ ГЄГ Г§ГЁГ­Г®, Г  ГІГ® ГўГ±ГҐ Г¤ГҐГ­ГјГЈГЁ ГЇГ°Г®ГЁГЈГ°Г ГҐГёГј!')
 		return false
 	end
 	if command == '/dice' then
-		sampAddChatMessage('{610BBE}[Helper] {FFFFFF}Выйди из казино, а то все деньги проиграешь!')
+		sampAddChatMessage('{610BBE}[Helper] {FFFFFF}Г‚Г»Г©Г¤ГЁ ГЁГ§ ГЄГ Г§ГЁГ­Г®, Г  ГІГ® ГўГ±ГҐ Г¤ГҐГ­ГјГЈГЁ ГЇГ°Г®ГЁГЈГ°Г ГҐГёГј!')
 		return false
 	end
 	if command == '/DICE' then
-		sampAddChatMessage('{610BBE}[Helper] {FFFFFF}Выйди из казино, а то все деньги проиграешь!')
+		sampAddChatMessage('{610BBE}[Helper] {FFFFFF}Г‚Г»Г©Г¤ГЁ ГЁГ§ ГЄГ Г§ГЁГ­Г®, Г  ГІГ® ГўГ±ГҐ Г¤ГҐГ­ГјГЈГЁ ГЇГ°Г®ГЁГЈГ°Г ГҐГёГј!')
 		return false
 		end
 	end
@@ -458,18 +458,18 @@ end
 
 function calc()
     if mainIni.config.primer == '' then
-        sampAddChatMessage('Вы не ввели пример.')
+        sampAddChatMessage('Г‚Г» Г­ГҐ ГўГўГҐГ«ГЁ ГЇГ°ГЁГ¬ГҐГ°.')
     else
         local func = load('return ' .. mainIni.config.primer)
         if func == nil then
-            sampAddChatMessage('Ошибка.', -1)
+            sampAddChatMessage('ГЋГёГЁГЎГЄГ .', -1)
         else
             local bool, res = pcall(func)
             if bool == false or type(res) ~= 'number' then
-                sampAddChatMessage('Ошибка.', -1)
+                sampAddChatMessage('ГЋГёГЁГЎГЄГ .', -1)
             
             else
-                sampAddChatMessage('Результат: ' .. res, -1)
+                sampAddChatMessage('ГђГҐГ§ГіГ«ГјГІГ ГІ: ' .. res, -1)
             end
         end
     end
@@ -487,12 +487,12 @@ end
 
 function sampev.onServerMessage(color, text)
   if acd.v then
-    if text:find("Поздравляем! Теперь этот транспорт принадлежит вам!") and not text:find('говорит') and not text:find('- |') then
+    if text:find("ГЏГ®Г§Г¤Г°Г ГўГ«ГїГҐГ¬! Г’ГҐГЇГҐГ°Гј ГЅГІГ®ГІ ГІГ°Г Г­Г±ГЇГ®Г°ГІ ГЇГ°ГЁГ­Г Г¤Г«ГҐГ¦ГЁГІ ГўГ Г¬!") and not text:find('ГЈГ®ГўГ®Г°ГЁГІ') and not text:find('- |') then
 			sampSendChat('/lock')
 	  end
   end
 	if mbc.v then
-		if text:find("Поздравляем! Теперь этот транспорт принадлежит вам!") and not text:find('говорит') and not text:find('- |') then
+		if text:find("ГЏГ®Г§Г¤Г°Г ГўГ«ГїГҐГ¬! Г’ГҐГЇГҐГ°Гј ГЅГІГ®ГІ ГІГ°Г Г­Г±ГЇГ®Г°ГІ ГЇГ°ГЁГ­Г Г¤Г«ГҐГ¦ГЁГІ ГўГ Г¬!") and not text:find('ГЈГ®ГўГ®Г°ГЁГІ') and not text:find('- |') then
 			lua_thread.create(function()
 				wait(500)
 				sampSendChat(u8:decode(smsbc.v))
@@ -500,12 +500,12 @@ function sampev.onServerMessage(color, text)
 		end
 	end
 	if at.v then
-		if text:find("Поздравляем! Теперь этот транспорт принадлежит вам!") or text:find("(.-)Поздравляю! Теперь этот дом ваш!")  and not text:find('говорит') and not text:find('- |') then
+		if text:find("ГЏГ®Г§Г¤Г°Г ГўГ«ГїГҐГ¬! Г’ГҐГЇГҐГ°Гј ГЅГІГ®ГІ ГІГ°Г Г­Г±ГЇГ®Г°ГІ ГЇГ°ГЁГ­Г Г¤Г«ГҐГ¦ГЁГІ ГўГ Г¬!") or text:find("(.-)ГЏГ®Г§Г¤Г°Г ГўГ«ГїГѕ! Г’ГҐГЇГҐГ°Гј ГЅГІГ®ГІ Г¤Г®Г¬ ГўГ Гё!")  and not text:find('ГЈГ®ГўГ®Г°ГЁГІ') and not text:find('- |') then
 			lua_thread.create(function()
-				sampSendChat("/me взглянул на часы с гравировкой •Словил словил•")
+				sampSendChat("/me ГўГ§ГЈГ«ГїГ­ГіГ« Г­Г  Г·Г Г±Г» Г± ГЈГ°Г ГўГЁГ°Г®ГўГЄГ®Г© В•Г‘Г«Г®ГўГЁГ« Г±Г«Г®ГўГЁГ«В•")
 				sampSendChat("/time")
 				wait(1200)
-				sampSendChat ("/do На часах  "..os.date('%H:%M:%S'))
+				sampSendChat ("/do ГЌГ  Г·Г Г±Г Гµ  "..os.date('%H:%M:%S'))
 			end)
 		end
 	end
